@@ -20,5 +20,6 @@ public class TransacaoService {
         Transacao transacao = new Transacao();
         transacao.setValor(transacaoDTO.getValor());
         transacao.setDataHora(transacaoDTO.getDataHora());
+        transacaoRepository.save(transacao);
     }
 }
