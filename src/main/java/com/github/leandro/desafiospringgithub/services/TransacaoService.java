@@ -22,4 +22,8 @@ public class TransacaoService {
         transacao.setDataHora(transacaoDTO.getDataHora());
         transacaoRepository.save(transacao);
     }
+
+    public void deleteAll(){
+        transacaoRepository.deleteAll();
+    }
 }
