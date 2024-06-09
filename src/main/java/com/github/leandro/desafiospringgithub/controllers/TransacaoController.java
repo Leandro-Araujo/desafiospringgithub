@@ -15,8 +15,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/")
-public class ControllerMain {
-    private List<TransacaoDTO> transacaoDTOS = new ArrayList<>();
+public class TransacaoController {
+    public List<TransacaoDTO> transacaoDTOS = new ArrayList<>();
 
     @PostMapping("/transacao")
     public ResponseEntity<Void> realizarTransacao(@RequestBody TransacaoDTO transacaoDTO){
